@@ -1,0 +1,119 @@
+h1 {
+  color: #f34949;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Bungee', cursive;
+}
+
+h2 {
+  color: #ffd96a;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+h4 {
+  color: #ffd96a;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+p {
+  color: #ffd96a;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Bungee', cursive;
+}
+
+.row {
+  color: #f34949;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  font-weight: 400;
+  font-family: 'Exo', sans-serif;
+
+}
+
+
+body {
+  background: #ff9090;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.weather-icons {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+.border {
+  border: 2px solid #ffd96a;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 50%;
+}
+
+.search-form {
+  display: block;
+  margin: 20px auto;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family: 'Exo', sans-serif;
+
+}
+
+.btn-search {
+  background-color: #fff29c;
+  border-radius: 5px;
+  color: #f34949);
+  padding: 5px;
+  font-family: 'Exo', sans-serif;
+
+}
+.btn-search:hover {
+  background-color: #f34949;
+  color: #fff29c;
+}
+
+.btn-current {
+  background-color: #f34949;
+  border-radius: 5px;
+  color: #fff);
+  padding: 5px;
+  font-family: 'Exo', sans-serif;
+
+}
+.btn-current:hover {
+  background-color: #fff29c;
+  color: #ff639f;
+}
+
+.units {
+  position: relative;
+  top: -75px;
+  color: #ffd96a;
+  font-size: 25px;
+  font-family: 'Bungee', cursive;
+
+}
+
+.temperature {
+  color: #f34949;
+  display: inline-block;
+  font-family: 'Bungee', cursive;
+  font-size: 130px;
+  text-align: center;
+}
