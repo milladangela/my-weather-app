@@ -18,39 +18,38 @@
   </head>
 
   <body>
-    <div class="container border">
-      <div class="weather-app row justify-content-md-center">
-        <form class="search-form" id="search-form">
+    <div id="root">
+      <div class="App">
+    <div class="container">
+      <div class="Weather">
+        <form>
           <div class="row">
-            <div class="col-6">
+            <div class="col-9">
               <input
                 type="search"
                 placeholder="Enter a city.."
-                autofocus="on"
-                autocomplete="off"
+                class="form-control search-input"
                 id="city-input"
-                class="form-control shadow-sm"
+                autocomplete="off"
               />
             </div>
-            <div class="col-3">
+            <div class="col-3 p-0">
               <input
                 type="submit"
                 value="Search"
-                class="form-control btn btn-search shadow-sm w-100"
+                class="btn btn-primary w-100"
               />
             </div>
-            <div class="col-3">
-              <button
-                class="btn btn-current shadow-sm w-100"
-                id="current-location-button"
-              >
-                Current
-              </button>
             </div>
-          </div>
         </form>
-      </div>
-      <h4 id = "date"></h4>
+        <div class="overview">
+      <h1 id = "city"></h1>
+      <ul>
+        <li>
+          Last updated: <span id="date"></span>
+        </li>
+        <li id="description"></li>
+      </ul>
       <h1 id="city"> </h1>
       </br>
       <img src="src/images/Sunny.png" alt="" class="center" />
@@ -131,6 +130,8 @@
         </span>     
       </div>
     </div>
+        </div>
+
     <small>
     <a href="http://camilladangela.com/" target="_blank"> Open-source code</a>, by Camilla D'Angela </small>
     <script src="src/index.js"></script>

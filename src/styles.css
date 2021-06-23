@@ -1,3 +1,25 @@
+body {
+  background:#f9f7fe;
+  font-family: 'Exo', sans-serif;
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+div {
+  display: block;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
 h1 {
   color: #f34949;
   text-align: center;
@@ -37,10 +59,33 @@ p {
 
 }
 
-
-body {
-  background: #ff9090;
+.App {
+  max-width: 800px;
+  margin: 60px auto;
 }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Weather {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  color:#878787;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
 
 .center {
   display: block;
@@ -58,32 +103,41 @@ body {
   width: 55%;
 }
 
-.border {
-  border: 2px solid #ffd96a;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 15px;
-  max-width: 50%;
+.Weather form {
+    margin-top: 40px;
+    border-bottom: 1px solid #f9f7fe;
+    padding-bottom: 30px;
 }
 
-.search-form {
-  display: block;
+.search-input {
+  display: inline-block;
+  background-color: #f9f7fe;
+  color: rgba(39,33,66,.4);
+  font-size: 16px;
+  border: none;
+  padding: 15px 20px;
   margin: 20px auto;
   font-size: 15px;
-  border-radius: 20px;
-  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  border-radius: 6px;
+  width: 100%;
 
 }
 
-.btn-search {
-  background-color: #fff29c;
-  border-radius: 5px;
-  color: #f34949);
-  padding: 5px;
-  font-family: 'Exo', sans-serif;
-
+.btn {
+  background: red;
+  border: none;
+  font-size: 16px;
+  padding: 15px 0;
+  margin: 20px auto;
+  font-weight: 700;  
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6px;
+  transition: ease-in-out;
 }
-.btn-search:hover {
+
+.btn:hover {
   background-color: #f34949;
   color: #fff29c;
 }
