@@ -77,15 +77,28 @@ function getForecast(coordinates) {
 }
 
 
-function displayWeatherCondition(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+// Display weather condition// 
 
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+function displayWeatherCondition(response) {
+      let temperatureElement = document.querySelector("#temperature");
+      let cityElement = document.querySelector("#city");
+      let descriptionElement = document.querySelector("#description");
+      let humidityElement = document.querySelector("#humidity");
+      let windElement = document.querySelector("#wind");
+      let dateElement = document.querySelector("#date");
+      let iconElement = document.querySelector("#icon");
+
+    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    cityElement.innerHTML = response.data.name;
+    descriptionElement.innerHTML = response.data.weather[0].description;
+    humidityElement.innerHTML = response.data.main.humidity;
+    windElement.innerHTML = Math.round(response.data.wind.speed);
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
 }
+
+
+// Display City// 
 
 function searchCity(city) {
   let apiKey = "f4503632550d0dbea76ae349f54831bd";
