@@ -1,5 +1,9 @@
 body {
+  background: #ff9090;
   font-family: arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 h1 {
@@ -40,7 +44,8 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-
+  display: inline-block;
+  position: relative;
   color: #fff;
   font-size: 16px;
   font-weight: 100;
@@ -49,6 +54,24 @@ li {
 
 li:first-letter {
   text-transform: capitalize;
+}
+
+.btn {
+    background: #ffd96a;
+    color: #f34949;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    height: 50px;
+}
+
+.form-control {
+    border-bottom: 1px solid #f9f7fe;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 5px;
+
 }
 
 .weather-app-wrapper {
@@ -62,6 +85,13 @@ li:first-letter {
   border-radius: 5px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .overview {
   margin-bottom: 20px;
 }
@@ -73,17 +103,23 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  color: #f34949;
+ font-family: 'Bungee', cursive;
+  font-size: 100px;
   line-height: 1;
   font-weight: 400;
 }
 
 .weather-temperature .units {
+  font-family: 'Bungee', cursive;
+  color: #f34949;
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -50px;
+  margin: 0 auto;
 }
+
+  
 
 .weather-temperature .active {
   color: rgb(33, 33, 33);
@@ -113,30 +149,6 @@ li:first-letter {
   font-size: 13px;
 }
 
-.row {
-  color: #f34949;
-  font-size: 20px;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
-  font-weight: 400;
-  font-family: 'Exo', sans-serif;
-
-}
-
-
-body {
-  background: #ff9090;
-}
-
-.center {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-}
-
 .weather-icons {
   display: block;
   text-align: center;
@@ -145,62 +157,3 @@ body {
   width: 55%;
 }
 
-.border {
-  border: 2px solid #ffd96a;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 15px;
-  max-width: 50%;
-}
-
-.search-form {
-  display: block;
-  margin: 20px auto;
-  font-size: 15px;
-  border-radius: 20px;
-  font-family: 'Exo', sans-serif;
-
-}
-
-.btn-search {
-  background-color: #fff29c;
-  border-radius: 5px;
-  color: #f34949;
-  padding: 5px;
-  font-family: 'Exo', sans-serif;
-
-}
-.btn-search:hover {
-  background-color: #f34949;
-  color: #fff29c;
-}
-
-button {
-  background-color: #fff29c;
-  border-radius: 30px;
-  color: #fff;
-  padding: 5px;
-  font-family: 'Exo', sans-serif;
-
-}
-.btn-current:hover {
-  background-color: #fff29c;
-  color: #ff639f;
-}
-
-.units {
-  position: relative;
-  top: -75px;
-  color: #ffd96a;
-  font-size: 25px;
-  font-family: 'Bungee', cursive;
-
-}
-
-.temperature {
-  color: #f34949;
-  display: inline-block;
-  font-family: 'Bungee', cursive;
-  font-size: 130px;
-  text-align: center;
-}

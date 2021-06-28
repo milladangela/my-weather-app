@@ -15,9 +15,10 @@
     <div class="container">
       <div class= "weather-app-wrapper">
          <div class="weather-app">
+  
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-7">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -26,14 +27,14 @@
                   autocomplete="off"
                 />
               </div>
-            <div class="col-2">
+            <div class="col-3">
                 <input
                   type="submit"
                   value="Search"
                   class="btn btn-primary w-100"
                 />
               </div>
-            <div class="col-1">
+            <div class="col-2">
               <button
                 class="btn btn-primary w-100"
                 id="current-location-button"
@@ -43,25 +44,36 @@
             </div>
           </div>
         </form>
-      </div>
-      <div class="overview">
+              <div class="overview">
       <ul>
         <li>Last updated: <span id="date"></span>
        </li>
-      <li>Humidity: <span id="humidity"></span>%</li>
+          </ul>
+          </div>
+           <div class="humidity-wind">
+             <ul>
+      <li>Humidity: <span id="humidity"></span>%</li>    
        <li>Wind: <span id="wind"></span> m/h</li>
        </ul>
        </div>
-      <h1 id="city"> </h1>
       </br>
-      <img src="src/images/Sunny.png" alt="" class="center" />
-      <h2 id="description"> </h2>
-      <div class="row justify-content-md-end">
-        <div class="col">
-          <span class="temperature" id="temperature"> </span>
-          <span class="units">°C</a></span>
-        </div> 
-      </div>
+      <h1 id="city"> </h1>
+            <h4 id="description"> </h4>
+
+       <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img 
+                src="" alt="" class="center" 
+                alt="Clear" 
+                id="icon" 
+                class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
       <div class="row" >
         <div class="col-3">
           <strong>Now</strong>
