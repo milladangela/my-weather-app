@@ -56,6 +56,10 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+small {
+  color: #fff;
+}
+
 .btn {
     background: #ffd96a;
     color: #f34949;
@@ -86,10 +90,9 @@ li:first-letter {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  text-align: center;
+  color: #fff;
+
 }
 
 .overview {
@@ -118,8 +121,6 @@ li:first-letter {
   top: -50px;
   margin: 0 auto;
 }
-
-  
 
 .weather-temperature .active {
   color: rgb(33, 33, 33);
