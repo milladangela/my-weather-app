@@ -85,9 +85,13 @@ button:hover{
 
 .container {
   background-image: url("./images/watch.png");
-  background-size:contain;
+  padding: 20px;  
+  background-size: 1000px 550px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .btn {
@@ -115,21 +119,19 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 500px;
+  margin: 50px auto;
 }
 
 .weather-app {
-  padding: 20px;
-  border: 8px solid #dcddde;
-  border-radius: 50px;
-  background-color:rgb(146, 166, 182);
+  padding: 10px;
+  margin-top: 100px;
 }
 
 .row {
   text-align: center;
-  color: rgb(191, 224, 251);
-    margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
 .overview {
@@ -138,15 +140,15 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height:70px;
+  width: 70px;
 }
 
 .weather-temperature strong {
   color: #fff;
 font-family: 'Exo', sans-serif;
  text-align: center;
-  font-size: 120px;
+  font-size: 80px;
   line-height: 1;
   font-weight: 900;
 }
@@ -156,8 +158,8 @@ font-family: 'Exo', sans-serif;
   color: #fff;
   position: relative;
   font-weight: 900;
-  font-size: 25px;
-  top: -65px;
+  font-size: 20px;
+  top: -45px;
   margin: 0 auto;
 }
 
