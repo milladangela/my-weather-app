@@ -38,14 +38,14 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   
   let forecastElement = document.querySelector("#forecast");
-
+  
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
-    forecastHTML =
-      forecastHTML +
+      forecastHTML =
+        forecastHTML +
         `
-      <div class="col-2">
+      <div class="col">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
           src="http://openweathermap.org/img/wn/${
@@ -125,8 +125,7 @@ function handleSubmit(event) {
 function searchLocation(position) {
   let apiKey = "f4503632550d0dbea76ae349f54831bd";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function getCurrentLocation(event) {

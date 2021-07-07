@@ -58,6 +58,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+
 small {
     font-size: 14px;
     margin-top: 10px;
@@ -80,6 +81,13 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
 button:hover{
       background: rgb(191, 224, 251);
 
+}
+
+.container {
+  background-image: url("./images/watch.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn {
@@ -115,7 +123,7 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
   padding: 20px;
   border: 8px solid #dcddde;
   border-radius: 50px;
-  background-color:rgb(124, 135, 145);
+  background-color:rgb(146, 166, 182);
 }
 
 .row {
@@ -153,19 +161,12 @@ font-family: 'Exo', sans-serif;
   margin: 0 auto;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
 
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
   color: #000;
+  display: block;
 }
 
 .weather-forecast-date {
