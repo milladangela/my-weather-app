@@ -138,7 +138,7 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
   color: #fff;
 font-family: 'Exo', sans-serif;
  text-align: center;
-  font-size: 100px;
+  font-size: 120px;
   line-height: 1;
   font-weight: 900;
 }
@@ -148,8 +148,8 @@ font-family: 'Exo', sans-serif;
   color: #fff;
   position: relative;
   font-weight: 900;
-  font-size: 16px;
-  top: -63px;
+  font-size: 25px;
+  top: -65px;
   margin: 0 auto;
 }
 
