@@ -1,9 +1,12 @@
+  html{
+  height: 100%;
+  }
+
+
 body {
-  background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
-  font-family: 'Jura', sans-serif;    
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+  background: radial-gradient(circle at 0.8% 3.1%, rgb(255, 188, 224) 0%, rgb(170, 165, 255) 46%, rgb(165, 255, 205) 100.2%);
+  font-family: 'Jura', sans-serif;  
+  min-height: 100%;
 }
 
 h1 {
@@ -19,20 +22,21 @@ h1 {
 }
 
 h2 {
-  color: rgb(191, 224, 251);
+  color: rgb(165, 255, 205);
   font-family: 'Jura', sans-serif;  
   text-align: center;
   font-size: 25px;
 }
 
 h4 {
-  color: rgb(191, 224, 251);
+  color: rgb(203, 173, 250);
   text-align: center;
   font-size: 18px;
+  text-transform:capitalize ;
 }
 
+
 p {
-  color: rgb(191, 224, 251);
   text-align: center;
   font-size: 20px;
 }
@@ -48,10 +52,11 @@ li {
   padding: 0;
   display: inline-block;
   position: relative;
-  color: rgb(191, 224, 251);
+  color: #fff;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  text-align: left;
 }
 
 li:first-letter {
@@ -64,24 +69,25 @@ small {
     margin-top: 10px;
     line-height: 18px;
     text-align: center;
-    color: #414042;
+    color: #fff;
   display: block;
 }
 
 button {
-background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
-    border-bottom: 1px solid #f9f7fe;
+background: rgb(203, 173, 250);
+    border-bottom: 2px solid (208, 208, 208);
     font-size: 20px;
     border: none;
-    height: 50px;
-    border-radius: 100px;
-  width: 50px;
+    height: 40px;
+    border-radius: 40px;
+  width: 40px;
     transition: all 0.3s ease 0s;}
 
 button:hover{
-      background: rgb(191, 224, 251);
+      background: rgb(170, 165, 255);
 
 }
+
 
 .container {
   background-image: url("./images/watch.png");
@@ -95,14 +101,13 @@ button:hover{
 }
 
 .btn {
-background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
-    border-bottom: 1px solid #f9f7fe;
-    color: #414042;
+background: rgb(203, 173, 250);
+    border-bottom: 2px solid (208, 208, 208);
+    color: #fff;
     font-weight: 700;
-    font-size: 16px;
-    padding: 15px 0;
+    font-size: 14px;
     border: none;
-    height: 50px;
+    height: 40px;
     transition: all 0.3s ease 0s;}
 
 .btn:hover {
@@ -111,9 +116,9 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
 
 
 .form-control {
-    border-bottom: 1px solid #f9f7fe;
-    font-size: 16px;
-    height: 50px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+    font-size: 14px;
+    height: 40px;
     border-radius: 5px;
 
 }
@@ -128,9 +133,14 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
   margin-top: 100px;
 }
 
+form{
+  display: inline-block;
+
+}
+
 .row {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #fff;
     margin-bottom: 10px;
 }
 
@@ -167,21 +177,22 @@ font-family: 'Exo', sans-serif;
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
   display: block;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  font-size: 18px;
+  color: #fff;
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 14px;
+
 }
 
 .weather-icons {
@@ -189,6 +200,6 @@ font-family: 'Exo', sans-serif;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 55%;
+  width: 100%;
 }
 
