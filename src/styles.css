@@ -4,7 +4,7 @@
 
 
 body {
-  background: radial-gradient(circle at 0.8% 3.1%, rgb(255, 188, 224) 0%, rgb(170, 165, 255) 46%, rgb(165, 255, 205) 100.2%);
+  background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%);
   font-family: 'Jura', sans-serif;  
   min-height: 100%;
 }
@@ -22,14 +22,14 @@ h1 {
 }
 
 h2 {
-  color: rgb(165, 255, 205);
+  color: #ee81b0;
   font-family: 'Jura', sans-serif;  
   text-align: center;
   font-size: 25px;
 }
 
 h4 {
-  color: rgb(203, 173, 250);
+  color: #ee81b0;
   text-align: center;
   font-size: 18px;
   text-transform:capitalize ;
@@ -37,6 +37,7 @@ h4 {
 
 
 p {
+  color: #ee81b0;
   text-align: center;
   font-size: 20px;
 }
@@ -73,8 +74,17 @@ small {
   display: block;
 }
 
+small a {
+  text-decoration: none;
+  color: #fff;
+}
+
+small a:hover {
+  color: #ee81b0;
+}
+
 button {
-background: rgb(203, 173, 250);
+background: #ee81b0;
     border-bottom: 2px solid (208, 208, 208);
     font-size: 20px;
     border: none;
@@ -84,13 +94,13 @@ background: rgb(203, 173, 250);
     transition: all 0.3s ease 0s;}
 
 button:hover{
-      background: rgb(170, 165, 255);
+      background: #f7a4c8;
 
 }
 
 
 .container {
-  background-image: url("./images/watch.png");
+  background-image: url("./images/watch-3.png");
   padding: 20px;  
   background-size: 1000px 550px;
   background-repeat: no-repeat;
@@ -101,7 +111,7 @@ button:hover{
 }
 
 .btn {
-background: rgb(203, 173, 250);
+background: #ee81b0;
     border-bottom: 2px solid (208, 208, 208);
     color: #fff;
     font-weight: 700;
@@ -111,7 +121,7 @@ background: rgb(203, 173, 250);
     transition: all 0.3s ease 0s;}
 
 .btn:hover {
-    background: rgb(191, 224, 251);
+    background: #f7a4c8;
 }
 
 
