@@ -5,27 +5,25 @@
 
     <title>Watch Weather App</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;700;800;900&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
- 
+
     <div class="container">
       <div class= "weather-app-wrapper">
          <div class="weather-app">
-                <div class="overview">
-      <ul>
-        <li>Last updated: <span id="date"></span>
-       </li>
-          </ul>
-          </div>
+
+
           <form id="search-form" class="mb-2">
             <div class="row">
-              <div class="col-7">
+              <div class="col-8">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -34,55 +32,62 @@
                   autocomplete="off"
                 />
               </div>
-            <div class="col-4">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
-              </div>
-            <div class="col-1">
-              <button
-                id="current-location-button"
-              >
-                📍
-              </button>
+
+
+
+            <div class="col-4 ">
+              <input
+                type="submit"
+                value="Search"
+                class="btn search-btn w-100"
+              />
             </div>
+
+
+          </div>
+          <div class="col-5" id="current-location-button">
+            <p><i class="fa-solid fa-location-dot"></i>Current location</p>
           </div>
         </form>
+        <div class="overview">
+          <ul>
+           <li>Last updated: <span id="date"> </span>
+           </li>
+              </ul>
+              </div>
 
-         
-       <div class="row"> 
-      <h1 id="city"> </h1>
-            <h4 id="description"> </h4>
-             </div>
 
-              <div class="row">           
-            <div class="col">HUMIDITY: <span id="humidity"></span>%</div>    
-             <div class="col">WIND: <span id="wind"></span> m/h</div>
-            </div>
 
        <div class="row">
-              <div class="d-flex weather-temperature align-items-center justify-content-center">
-                <img 
-                src="" alt="" class="center" 
-                alt="Clear" 
-                id="icon" 
-               />
+        <div class="row">
+          <h1 id="city"> </h1>
+                <h4 id="description"> </h4>
+                 </div>
+        <div class="d-flex weather-temperature align-items-center justify-content-center">
+
                 <div class="float-left">
-                  <strong id="temperature"></strong
-                  ><span class="units">°C</a> 
+                       <img
+                src="" alt="" class="center"
+                alt="Clear"
+                id="icon"
+               />
+                   <strong id="temperature"></strong
+                  ><span class="units">°C</a>
                   </span
                   >
                 </div>
                 </div>
             </div>
+
+
+                      <div class="row">
+                    <div class="col "> <p>HUMIDITY: <span id="humidity"></span>% </p></div>
+                     <div class="col"> <p> WIND: <span id="wind"></span> m/h </p></div>
+                    </div>
               <div class="weather-forecast" id="forecast"></div>
         </div>
-          
+
         </div>
-    <small>
-     <a href="https://github.com/milladangela/my-weather-app" target="_blank" rel="noopener noreferrer">Open-source</a> code by <a href="http://camilladangela.com/" target="_blank" rel="noopener noreferrer">Camilla D'Angela</a>
-    </small>
+
     <script src="src/index.js"></script>
   </body>
