@@ -237,5 +237,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Initialize with default city
-  search("New York");
+  search("Bilbao");
 });
